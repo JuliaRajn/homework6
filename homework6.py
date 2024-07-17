@@ -4,7 +4,7 @@ print(my_dict['Flex'])
 print(my_dict.get('Masha'))
 my_dict.update({'Sasha':1996, 'Polina':2001})
 print(my_dict)
-del my_dict['Flex']
+my_dict.pop('Flex')
 print(my_dict)
 my_set={1,2,3,True,2,3,'a','a'}
 print(my_set)
