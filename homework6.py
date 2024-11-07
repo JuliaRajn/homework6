@@ -1,14 +1,28 @@
-my_dict={'Anton': 1999, 'Flex': 1997}
-print(my_dict)
+my_dict = {'Anton': 1999, 'Flex': 1997}
+print(my_dict)  # Выводим исходный словарь
+
+# Выводим значение по ключу 'Flex'
 print(my_dict['Flex'])
-print(my_dict.get('Masha'))
-my_dict.update({'Sasha':1996, 'Polina':2001})
-print(my_dict)
-my_dict.pop('Flex')
-print(my_dict)
-my_set={1,2,3,True,2,3,'a','a'}
-print(my_set)
-my_set.update({7,'c'})
-print(my_set)
-print(my_set.discard(1))
-print(my_set)
+
+# Пробуем получить значение по ключу 'Masha', который отсутствует в словаре
+print(my_dict.get('Masha'))  # Вернет None, так как ключа 'Masha' нет
+
+# Обновляем словарь, добавляя новые пары ключ-значение
+my_dict.update({'Sasha': 1996, 'Polina': 2001})
+print(my_dict)  # Выводим обновленный словарь
+
+# Удаляем пару по ключу 'Flex' и сохраняем значение в переменной a
+a = my_dict.pop('Flex')
+print(a)  # Выводим удаленное значение
+print(my_dict)  # Выводим словарь после удаления
+
+my_set = {1, 2, 3, True, 2, 3, 'a', 'a'}  # Создаем множество
+print(my_set)  # Выводим множество
+
+# Обновляем множество, добавляя новые элементы
+my_set.update({7, 'c'})
+print(my_set)  # Выводим обновленное множество
+
+# Удаляем элемент 1 из множества, если он существует
+print(my_set.discard(1))  # discard не возвращает значение, просто удаляет
+print(my_set)  # Выводим множество после удаления
